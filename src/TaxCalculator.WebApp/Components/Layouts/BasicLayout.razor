@@ -1,0 +1,38 @@
+﻿@namespace TaxCalculator.WebApp.Components
+@using Blazored.LocalStorage
+@inherits LayoutComponentBase
+
+<AntDesign.ProLayout.BasicLayout 
+    Logo="@("https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg")"
+    MenuData="_menuData">
+    <RightContentRender>
+        <Button Type="@ButtonType.Link" OnClick="@Logout">Logout</Button>
+    </RightContentRender>
+    <ChildContent>
+        @Body
+    </ChildContent>
+    <FooterRender></FooterRender>
+</AntDesign.ProLayout.BasicLayout>
+
+@code
+{
+    [Inject] NavigationManager NavigationManager { get; set; }
+    [Inject] ILocalStorageService LocalStorageService { get; set; }
+    
+    private readonly MenuDataItem[] _menuData =
+    {
+        new MenuDataItem
+        {
+            Path = "/",
+            Name = "home",
+            Key = "home",
+            Icon = "smile",
+        }
+    };
+
+    private async Task Logout()
+    {
+        await LocalStorageService.ClearAsync();
+        NavigationManager.NavigateTo("/login", true);
+    }
+}

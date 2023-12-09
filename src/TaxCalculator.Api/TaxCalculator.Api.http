@@ -1,0 +1,19 @@
+@TaxCalculatorApi = http://localhost:5000
+
+POST {{TaxCalculatorApi}}/api/tax/calculate/
+Content-Type: application/json
+
+{
+  "postal_code": "7441",
+  "annual_income": 2000
+}
+
+###
+
+POST {{TaxCalculatorApi}}/api/user/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}

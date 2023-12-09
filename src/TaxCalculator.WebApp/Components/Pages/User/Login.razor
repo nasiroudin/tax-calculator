@@ -1,0 +1,35 @@
+﻿@page "/login"
+@using TaxCalculator.WebApp.Components.Layouts
+@layout UserLayout
+
+<PageContainer Title="Login">
+    <Card Title="Login">
+        <Form Loading="_loading" Model="@_model" LabelColSpan="10" WrapperColSpan="4" OnFinish="HandleSubmit">
+            <FormItem Label="Username">
+                <Input Placeholder="Username: admin" @bind-Value="@context.Username">
+                    <Prefix><Icon Type="user"/></Prefix>
+                </Input>
+            </FormItem>
+            <FormItem Label="Password">
+                <Input Placeholder="Password: admin" Type="password" @bind-Value="@context.Password">
+                    <Prefix><Icon Type="lock"/></Prefix>
+                </Input>
+            </FormItem>
+            <FormItem WrapperColOffset="13" WrapperColSpan="16">
+                <Button Type="@ButtonType.Primary" HtmlType="submit">
+                    Login
+                </Button>
+            </FormItem>
+        </Form>
+        
+        <Divider />
+        
+        @if (!string.IsNullOrWhiteSpace(_error))
+        {
+            <Alert Message="Error" Type="@AlertType.Error">
+                @_error
+            </Alert>
+        }
+
+    </Card>
+</PageContainer>

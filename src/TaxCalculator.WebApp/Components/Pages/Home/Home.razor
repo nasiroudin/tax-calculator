@@ -1,0 +1,41 @@
+﻿@page "/"
+
+<PageContainer Title="Home">
+    <Card Title="Calculator">
+        <Form Loading="_loading" Model="@_taxInput" LabelColSpan="10" WrapperColSpan="4" OnFinish="OnFinish">
+            <FormItem Label="Postal Code">
+                <Input @bind-Value="@context.PostalCode"/>
+            </FormItem>
+            <FormItem Label="Annual Income">
+                <AntDesign.InputNumber @bind-Value="@context.AnnualIncome" />
+            </FormItem>
+            <FormItem WrapperColOffset="13" WrapperColSpan="16">
+                <Button Type="@ButtonType.Primary" HtmlType="submit">
+                    Calculate
+                </Button>
+            </FormItem>
+        </Form>
+        <Divider />
+        @if (!string.IsNullOrWhiteSpace(_calculatedTax))
+        {
+            <Alert Message="@_calculatedTax" Type="@AlertType.Info"></Alert>
+        }
+        @if (!string.IsNullOrWhiteSpace(_error))
+        {
+            <Alert Message="Error" Type="@AlertType.Error">
+                @_error
+            </Alert>
+        }
+
+    </Card>
+    <Divider />
+    <Card Title="Results">
+        <Table TItem="TaxDetailTableData" DataSource="@_taxDetailList" PageSize="7">
+            <PropertyColumn Property="c=>c.PostalCode"></PropertyColumn>
+            <PropertyColumn Property="c=>c.AnnualIncome"></PropertyColumn>
+            <PropertyColumn Property="c=>c.TaxCalculationType"></PropertyColumn>
+            <PropertyColumn Property="c=>c.CalculatedTax"></PropertyColumn>
+            <PropertyColumn Property="c=>c.CreatedOn"></PropertyColumn>
+        </Table>
+    </Card>
+</PageContainer>
