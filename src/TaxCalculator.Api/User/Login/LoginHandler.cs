@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Authentication.BearerToken;
 using Microsoft.AspNetCore.Http;
 using Serilog;
 using TaxCalculator.Api.User.Infrastructure.Persistence.SqlServer.Interfaces;
-using TaxCalculator.Shared.Models.User;
 
 namespace TaxCalculator.Api.User.Login;
 

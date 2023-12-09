@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
 using TaxCalculator.Api.Extensions;
-using TaxCalculator.Shared.Models.Calculate;
 
 namespace TaxCalculator.Api.Tax.Calculate;
 

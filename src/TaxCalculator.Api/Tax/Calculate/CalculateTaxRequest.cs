@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 
-namespace TaxCalculator.Shared.Models.Calculate;
+namespace TaxCalculator.Api.Tax.Calculate;
 
 public class CalculateTaxRequest : IRequest<IResult>
 {

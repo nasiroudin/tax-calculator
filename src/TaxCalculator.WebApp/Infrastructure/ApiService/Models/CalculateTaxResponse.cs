@@ -1,4 +1,4 @@
-﻿namespace TaxCalculator.Shared.Models.Calculate;
+﻿namespace TaxCalculator.WebApp.Infrastructure.ApiService.Models;
 
 public class CalculateTaxResponse
 {

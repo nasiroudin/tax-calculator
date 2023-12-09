@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 
-namespace TaxCalculator.Shared.Models.User;
+namespace TaxCalculator.Api.User.Login;
 
 public class LoginRequest : IRequest<IResult>
 {

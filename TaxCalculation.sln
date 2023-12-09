@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculator.Api.Integrati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculator.WebApp", "src\TaxCalculator.WebApp\TaxCalculator.WebApp.csproj", "{3B319566-B1D7-473E-B976-D712B9A17F45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculator.Shared", "src\TaxCalculator.Shared\TaxCalculator.Shared.csproj", "{C6ABCBBF-0AF9-4C25-8647-6BAB4195DC36}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,10 +37,6 @@ Global
 		{3B319566-B1D7-473E-B976-D712B9A17F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B319566-B1D7-473E-B976-D712B9A17F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B319566-B1D7-473E-B976-D712B9A17F45}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C6ABCBBF-0AF9-4C25-8647-6BAB4195DC36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C6ABCBBF-0AF9-4C25-8647-6BAB4195DC36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C6ABCBBF-0AF9-4C25-8647-6BAB4195DC36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C6ABCBBF-0AF9-4C25-8647-6BAB4195DC36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,7 +46,6 @@ Global
 		{84CA9F27-F182-4BD5-952B-9E43E2F56E29} = {AEDEB62E-C656-4715-AF4F-9619B6D812FF}
 		{86720798-7E94-4E3B-B1E8-DA718FFDAE3C} = {AEDEB62E-C656-4715-AF4F-9619B6D812FF}
 		{3B319566-B1D7-473E-B976-D712B9A17F45} = {1B5FE203-6EF9-46C6-8D9D-5F3023FEC4ED}
-		{C6ABCBBF-0AF9-4C25-8647-6BAB4195DC36} = {1B5FE203-6EF9-46C6-8D9D-5F3023FEC4ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E9B3E113-F702-4985-B148-8650CE6FB4D0}

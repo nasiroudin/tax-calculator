@@ -10,7 +10,6 @@ using TaxCalculator.Api.Tax.Domain.Enums;
 using TaxCalculator.Api.Tax.Domain.Interfaces;
 using TaxCalculator.Api.Tax.Infrastructure.Persistence.SqlServer;
 using TaxCalculator.Api.Tax.Infrastructure.Persistence.SqlServer.Interfaces;
-using TaxCalculator.Shared.Models.Calculate;
 
 namespace TaxCalculator.Api.Tax.Calculate;
 

@@ -1,5 +1,5 @@
 ﻿using Refit;
-using TaxCalculator.Shared.Models.User;
+using TaxCalculator.WebApp.Infrastructure.ApiService.Models;
 
 namespace TaxCalculator.WebApp.Infrastructure.ApiService;
 

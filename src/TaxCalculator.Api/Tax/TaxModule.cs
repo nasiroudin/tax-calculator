@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Serilog;
+using TaxCalculator.Api.Tax.Calculate;
+using TaxCalculator.Api.Tax.Details;
 using TaxCalculator.Api.Tax.Infrastructure.Persistence.SqlServer.Interfaces;
-using TaxCalculator.Shared.Models.Calculate;
-using TaxCalculator.Shared.Models.Details;
 
 namespace TaxCalculator.Api.Tax;
 

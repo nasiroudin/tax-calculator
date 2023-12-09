@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TaxCalculator.Shared\TaxCalculator.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <AdditionalFiles Include="Components\Layouts\BasicLayout.razor" />
     <AdditionalFiles Include="Components\Pages\Home\Home.razor" />
     <AdditionalFiles Include="Components\Pages\_Host.cshtml" />

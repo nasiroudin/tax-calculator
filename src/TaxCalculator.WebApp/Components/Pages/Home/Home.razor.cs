@@ -4,8 +4,8 @@ using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Refit;
-using TaxCalculator.Shared.Models.Calculate;
 using TaxCalculator.WebApp.Infrastructure.ApiService;
+using TaxCalculator.WebApp.Infrastructure.ApiService.Models;
 
 namespace TaxCalculator.WebApp.Components.Pages.Home;
 

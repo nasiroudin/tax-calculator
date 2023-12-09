@@ -3,8 +3,8 @@ using System.Text.Json;
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components;
 using Refit;
-using TaxCalculator.Shared.Models.User;
 using TaxCalculator.WebApp.Infrastructure.ApiService;
+using TaxCalculator.WebApp.Infrastructure.ApiService.Models;
 
 namespace TaxCalculator.WebApp.Components.Pages.User;
 

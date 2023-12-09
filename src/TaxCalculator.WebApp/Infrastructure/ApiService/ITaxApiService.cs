@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
-using Refit;
-using TaxCalculator.Shared.Models.Calculate;
-using TaxCalculator.Shared.Models.Details;
+﻿using Refit;
+using TaxCalculator.WebApp.Infrastructure.ApiService.Models;
 
 namespace TaxCalculator.WebApp.Infrastructure.ApiService;
 

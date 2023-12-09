@@ -2,7 +2,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
-using TaxCalculator.Shared.Models.User;
+using TaxCalculator.Api.User.Login;
 
 namespace TaxCalculator.Api.User;
 
