@@ -1,3 +1,3 @@
 # tax-calculator
 
-![Build](https://github.com/nasiroudin/tax-calculator/blob/main/.github/workflows/build.yml/badge.svg)
+[![Actions Status](https://github.com/nasiroudin/tax-calculator/workflows/build/badge.svg)](https://github.com/nasiroudin/tax-calculator/actions)
