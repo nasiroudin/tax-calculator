@@ -17,6 +17,6 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.0.x
-    - name: Build and package nugets
+    - name: Build
       run:
         make continuous_integration
