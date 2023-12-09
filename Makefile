@@ -16,9 +16,6 @@ clean:
 
 .PHONY: setup
 setup:
-	@echo "Creating artifact directory"	
-	@mkdir $(ARTIFACT_DIR)
-
 	@echo "Installing 'minver-cli'"
 	@dotnet tool install --global --verbosity quiet minver-cli
 	@echo "Installing dependencies completed"
