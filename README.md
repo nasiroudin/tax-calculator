@@ -45,7 +45,7 @@ Code has been written in C# using .NET8.
 Before running the program, you need to make sure you have a MSSQL Server running on your local machine or in docker containers.
 If you plan to run an instance of MSSQL Server on your local machine, then you will need to restore the TAX_DB backup found in repository path:
 
-    docker/mssql/backup/TAX_DB.bak
+    [docker/mssql/backup/TAX_DB.bak](https://github.com/nasiroudin/tax-calculator/blob/main/docker/mssql/backup/TAX_DB.bak)
 
 #### 1.2 Using Docker
 To setup MSSQL in docker along with other infra dependencies you can do:
