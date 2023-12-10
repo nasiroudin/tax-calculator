@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculator.Api", "src\Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculator.Api.UnitTests", "tests\TaxCalculator.Api.UnitTests\TaxCalculator.Api.UnitTests.csproj", "{84CA9F27-F182-4BD5-952B-9E43E2F56E29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculator.Api.IntegrationTests", "tests\TaxCalculator.Api.IntegrationTests\TaxCalculator.Api.IntegrationTests.csproj", "{86720798-7E94-4E3B-B1E8-DA718FFDAE3C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculator.WebApp", "src\TaxCalculator.WebApp\TaxCalculator.WebApp.csproj", "{3B319566-B1D7-473E-B976-D712B9A17F45}"
 EndProject
 Global
@@ -29,10 +27,6 @@ Global
 		{84CA9F27-F182-4BD5-952B-9E43E2F56E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84CA9F27-F182-4BD5-952B-9E43E2F56E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84CA9F27-F182-4BD5-952B-9E43E2F56E29}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86720798-7E94-4E3B-B1E8-DA718FFDAE3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86720798-7E94-4E3B-B1E8-DA718FFDAE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86720798-7E94-4E3B-B1E8-DA718FFDAE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86720798-7E94-4E3B-B1E8-DA718FFDAE3C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3B319566-B1D7-473E-B976-D712B9A17F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3B319566-B1D7-473E-B976-D712B9A17F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B319566-B1D7-473E-B976-D712B9A17F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -44,7 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B29404AB-ADA2-4F39-B622-E6DFAF8C6968} = {1B5FE203-6EF9-46C6-8D9D-5F3023FEC4ED}
 		{84CA9F27-F182-4BD5-952B-9E43E2F56E29} = {AEDEB62E-C656-4715-AF4F-9619B6D812FF}
-		{86720798-7E94-4E3B-B1E8-DA718FFDAE3C} = {AEDEB62E-C656-4715-AF4F-9619B6D812FF}
 		{3B319566-B1D7-473E-B976-D712B9A17F45} = {1B5FE203-6EF9-46C6-8D9D-5F3023FEC4ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
