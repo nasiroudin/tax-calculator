@@ -12,7 +12,9 @@ Each Postal Code has their own specific tax calculation namely:
 | 1000        | Progressive          |
 
 <div align="center">
+  
 [![Actions Status](https://github.com/nasiroudin/tax-calculator/workflows/Build/badge.svg)](https://github.com/nasiroudin/tax-calculator/actions)
+
 </div>
 
 - 
