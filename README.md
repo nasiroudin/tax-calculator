@@ -11,6 +11,8 @@ Each Postal Code has their own specific tax calculation namely:
 | 7000        | Flat Rate            |
 | 1000        | Progressive          |
 
+![image](assets/tax_calculator_app.png)
+
 <div align="center">
   
 [![Actions Status](https://github.com/nasiroudin/tax-calculator/workflows/Build/badge.svg)](https://github.com/nasiroudin/tax-calculator/actions)
