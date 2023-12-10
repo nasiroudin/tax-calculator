@@ -12,7 +12,7 @@ Content-Type: application/json
 
 POST {{TaxCalculatorApi}}/api/tax/calculate
 Content-Type: application/json
-Authorization: Bearer CfDJ8OXsE_ZUlW1AokKx4C9gm7dgWWoTSz6Ml2jJB9j6sxUxyq-HgLcks4O-AnSIk7cA-VYQfB0uJRcpulZv1na380IJs5q_qP1Iapqd2CGv9CBq1m7xqL3d9lNbiU5zVJ63KcsdMpZ0OdfMtw04sdfdmxOqHAVUAyt_iZSsAtuupO1hVJRvmxt1SsdvdXI8-qQsSaoXhlE8M1FBsNeYKkVFF7nx1xlvVq1g6QokR2vYqbhZX2QgzcKtZgbWQ3QAiHxXDi-X-YzII5rId2k6kpRe90E
+Authorization: Bearer {{BearerToken}}
 
 {
   "postal_code": "7441",
@@ -22,4 +22,4 @@ Authorization: Bearer CfDJ8OXsE_ZUlW1AokKx4C9gm7dgWWoTSz6Ml2jJB9j6sxUxyq-HgLcks4
 ###
 
 GET {{TaxCalculatorApi}}/api/tax/details
-Authorization: Bearer CfDJ8OXsE_ZUlW1AokKx4C9gm7dgWWoTSz6Ml2jJB9j6sxUxyq-HgLcks4O-AnSIk7cA-VYQfB0uJRcpulZv1na380IJs5q_qP1Iapqd2CGv9CBq1m7xqL3d9lNbiU5zVJ63KcsdMpZ0OdfMtw04sdfdmxOqHAVUAyt_iZSsAtuupO1hVJRvmxt1SsdvdXI8-qQsSaoXhlE8M1FBsNeYKkVFF7nx1xlvVq1g6QokR2vYqbhZX2QgzcKtZgbWQ3QAiHxXDi-X-YzII5rId2k6kpRe90E
+Authorization: Bearer {{BearerToken}}
