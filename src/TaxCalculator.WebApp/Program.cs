@@ -5,9 +5,15 @@ using AntDesign.ProLayout;
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Refit;
+using Serilog;
 using TaxCalculator.WebApp.Infrastructure.ApiService;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog((ctx, lc) => lc
+    .Enrich.FromLogContext()
+    .ReadFrom.Configuration(ctx.Configuration)
+);
 
 // Add services to the container.
 builder.Services.AddRazorPages();

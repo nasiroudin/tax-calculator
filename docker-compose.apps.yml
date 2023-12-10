@@ -1,0 +1,37 @@
+version: '3.8'
+
+services: 
+  taxcalculator.api:
+    container_name: taxcalculator.api
+    image: ${DOCKER_REGISTRY-}taxcalculator.api
+    build:
+      context: .
+      dockerfile: src/TaxCalculator.Api/Dockerfile
+    environment:
+      - Serilog:WriteTo:1:Args:serverUrl=http://seq:5341
+      - ASPNETCORE_URLS=http://+:5000
+      - ConnectionStrings:SqlServer=Server=mssql;Port=3306;database=tax_db;uid=sa;password=Password!
+    ports:
+      - 5000:5000
+    networks:
+      - myapp-network
+  
+  taxcalculator.webapp:
+    container_name: taxcalculator.webapp
+    image: ${DOCKER_REGISTRY-}taxcalculator.webapp
+    build:
+      context: .
+      dockerfile: src/TaxCalculator.WebApp/Dockerfile
+    environment:
+      - Serilog:WriteTo:1:Args:serverUrl=http://seq:5341
+      - ASPNETCORE_URLS=http://+:5001
+      - ConnectionStrings:SqlServer=Server=mssql;Port=3306;database=tax_db;uid=sa;password=Password!
+      - TaxCalculatorApiEndpoint=http://taxcalculator.api:5000
+    ports:
+      - 5001:5001
+    networks:
+      - myapp-network
+  
+networks:
+  myapp-network:
+    name: myapp-network
