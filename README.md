@@ -43,7 +43,7 @@ Code has been written in C# using .NET8.
 ### 1. Setup
 #### 1.1 Using MSSQL Locally
 Before running the program, you need to make sure you have a MSSQL Server running on your local machine or in docker containers.
-If you plan to run an instance of MSSQL Server on your local machine, then you will need to restore the TAX_DB backup found in path:
+If you plan to run an instance of MSSQL Server on your local machine, then you will need to restore the TAX_DB backup found in repository path:
 
     docker/mssql/backup/TAX_DB.bak
 
@@ -95,6 +95,7 @@ Reference: https://www.jimmybogard.com/vertical-slice-architecture/
 - Implemented Strategy and Factory Patterns to design the Tax Calculation
 - Used Dapper as ORM
 - Testing using NSubstitute and NUnit
+- InMemory Cache to cache configuration data
 
 ## Endpoints
 
