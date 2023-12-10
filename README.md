@@ -56,7 +56,7 @@ Note that the DB will be automatically created with its tables and sample data.
 
 ### 2. Run application using IDE
 Steps:
-- Set the correct connection string for MSSQL Server in appsettings.json in config ConnectionStrings:SqlServer 
+- Set the correct connection string for MSSQL Server in [appsettings.json](https://github.com/nasiroudin/tax-calculator/blob/ca92eb9dda49bc6c9cc95fa5b7113c209f44eade/src/TaxCalculator.Api/appsettings.json#L10) in config ConnectionStrings:SqlServer 
 - Run TaxCalculator.Api to start serving the API on port 5000.
 - Run TaxCalculator.WebApp to start the Tax Calculator Web UI on port 5001
 
