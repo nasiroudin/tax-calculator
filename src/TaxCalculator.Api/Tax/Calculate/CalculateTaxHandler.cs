@@ -62,7 +62,7 @@ public class CalculateTaxHandler(
         {
             _logger
                 .ForContext("CalculateTaxRequest", request, true)
-                .Error("Error occurred while calculating tax: {ErrorMessage}", e.Message);
+                .Error(e, "Error occurred while calculating tax: {ErrorMessage}", e.Message);
             
             return Results.StatusCode(StatusCodes.Status500InternalServerError);
         }

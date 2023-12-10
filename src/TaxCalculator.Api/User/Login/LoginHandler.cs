@@ -51,7 +51,7 @@ public class LoginHandler(
         catch (Exception e)
         {
             _logger
-                .Error("Error occurred while retrieving tax details: {ErrorMessage}", e.Message);
+                .Error(e, "Error occurred while logging: {ErrorMessage}", e.Message);
             
             return Results.StatusCode(StatusCodes.Status500InternalServerError);
         }

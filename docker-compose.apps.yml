@@ -10,7 +10,7 @@ services:
     environment:
       - Serilog:WriteTo:1:Args:serverUrl=http://seq:5341
       - ASPNETCORE_URLS=http://+:5000
-      - ConnectionStrings:SqlServer=Server=mssql;Port=3306;database=tax_db;uid=sa;password=Password!
+      - ConnectionStrings:SqlServer=Server=mssql;Database=tax_db;User Id=sa;Password=Password!;
     ports:
       - 5000:5000
     networks:
@@ -25,7 +25,6 @@ services:
     environment:
       - Serilog:WriteTo:1:Args:serverUrl=http://seq:5341
       - ASPNETCORE_URLS=http://+:5001
-      - ConnectionStrings:SqlServer=Server=mssql;Port=3306;database=tax_db;uid=sa;password=Password!
       - TaxCalculatorApiEndpoint=http://taxcalculator.api:5000
     ports:
       - 5001:5001
