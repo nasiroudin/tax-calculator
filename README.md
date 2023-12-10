@@ -96,6 +96,7 @@ Reference: https://www.jimmybogard.com/vertical-slice-architecture/
 - Used Dapper as ORM
 - Testing using NSubstitute and NUnit
 - InMemory Cache to cache configuration data
+- Makefile with Github Actions for Build Automation
 
 ## Endpoints
 
