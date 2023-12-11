@@ -62,7 +62,7 @@ Steps:
 
 ### 3. Run everything in docker
 
-    $ docker-compose -f .\docker-compose.infra.yml up -d
+    $ docker-compose -f .\docker-compose.infra.yml up -d --build
     $ docker-compose -f .\docker-compose.apps.yml up -d
 
 Once the application are up and running, open http://localhost:5001 on your browser which will redirect you to the logic screen.
